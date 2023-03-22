@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+body header a {
+  color: white;
+  font-size: 2rem;
+}
+body header a:hover {
+  color: rgb(42, 160, 105);
+}
+body header a.none {
+  color: #c4c4c4;
+  cursor: context-menu;
+}
+body main section {
+  text-align: center;
+}
+body main section canvas {
+  border: 5px solid green;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main section p {
+  font-size: 1.5rem;
+  color: white;
+}
+body main section button {
+  background-color: green;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=snakestyle.css.map */

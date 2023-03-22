@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // 避免水平移動軸(預設content-box)
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.redtext {
+  color: red;
+}
+
+#bluetext {
+  color: blue;
+}
+
+.fontLarge {
+  font-size: 2rem;
+}
+
+.active {
+  color: rgb(42, 160, 105);
+  background-color: black;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+header {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+  a {
+    font-size: 1.75rem;
+    color: black;
+    &:hover {
+      color: rgb(42, 160, 105);
+    }
+  }
+}
+
+nav {
+  background-color: #3b383c;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    // 消掉黑點
+    li {
+      display: flex;
+      a {
+        padding: 1rem 0.75rem;
+        color: white;
+        // default設定是大於inherited
+        text-decoration: none;
+        transition: all 1s ease;
+        &:hover {
+          color: rgb(54, 212, 138);
+          background-color: #535353;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: #c4c4c4;
+  main {
+    section.name {
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      div.namecard {
+        margin-top: 10vh;
+        height: 37vh;
+        padding: 15px;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 435px;
+        box-shadow: 10px 5px 5px black;
+        div.cardup {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    section.resume {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 5rem;
+      section.table {
+        flex: 5 1 500px;
+        table {
+          border-collapse: collapse;
+          tr {
+            border-top: 1px solid black;
+            transition: all 0.2s ease;
+            &:hover {
+              background-color: #eee;
+            }
+            td {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+    section.picture {
+      // background-color: green;
+      display: flex;
+      flex: 1 1 500px;
+      margin-left: 50px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+}

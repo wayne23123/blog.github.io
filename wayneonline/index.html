@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁|Wayne Lu的個人網頁</title>
+    <!-- google font要放在stylesheet上面 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><i></i>Wayne Lu的個人網頁</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#">首頁</a></li>
+        <!-- href用#不會重新整理 -->
+        <li><a href="#">關於我</a></li>
+        <li><a href="#">project:模仿</a></li>
+        <ul>
+          <li>
+            <a href="./project/waynetodolist/todolistindex.html"
+              >Project:<br />TodoList</a
+            >
+          </li>
+          <li>
+            <a href="./project/waynesnake/snakeindex.html">Project:貪食蛇</a>
+          </li>
+          <li><a href="#">Project:</a></li>
+        </ul>
+        <li><a href="#">react練習</a></li>
+        <li><a href="#">其他</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="name">
+        <div class="namecard">
+          <div class="cardup">
+            <div class="cardupleft">
+              <h1 class="fontLarge">呂威霖 <span>(Wayne Lu)</span></h1>
+              <br />
+              <h2 id="bluetext">前端工程師</h2>
+            </div>
+            <div class="cardupright">
+              <img
+                width="100px"
+                height="100px"
+                src="./pictures/seano.jpg"
+                alt="個人照片"
+              />
+            </div>
+          </div>
+          <div clsaa="downcard">
+            <hr />
+            <h3>
+              嗨,我是Wayne,<br />我是一位來自台灣的網頁前端技術自學者，目前正在持續往網頁全端開發學習
+            </h3>
+            <a href="./contact.html">了解更多</a>
+          </div>
+        </div>
+      </section>
+      <section class="resume">
+        <section class="table">
+          <table>
+            <tr style="border-top: 1px solid black">
+              <td style="width: 20%">自我簡介:</td>
+              <td style="width: 80%">
+                我是一位來自台灣的網頁前端技術自學者，目前正在持續往網頁全端開發學習
+              </td>
+            </tr>
+            <tr>
+              <td>學歷:</td>
+              <td>中國文化大學大氣科學系</td>
+            </tr>
+            <tr>
+              <td>經歷:</td>
+              <td>正興機電技術員</td>
+            </tr>
+            <tr>
+              <td>證照:</td>
+              <td>網路架設丙級,冷凍空調丙級</td>
+            </tr>
+            <tr>
+              <td>專長</td>
+              <td>
+                <img src="/icon/icons8-html-5.svg" alt="HTML5" />
+                <img src="/icon/icons8-css3.svg" alt="css3" />
+                <img src="/icon/icons8-javascript.svg" alt="javascript" />
+                <img src="/icon/vue-js.svg" alt="Vue" />
+              </td>
+            </tr>
+            <tr>
+              <td>開發經驗</td>
+              <td>我曾經開發過2個網頁經驗</td>
+            </tr>
+          </table>
+        </section>
+        <section class="picture">
+          <img
+            width="300px"
+            height="300px"
+            src="./pictures/serfphoto.jpeg"
+            alt=""
+          />
+        </section>
+      </section>
+      <section>
+        <div id="app">{{ message }}</div>
+      </section>
+    </main>
+    <footer>© Wayne Lu 2023</footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            message: "Hello Vue!",
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

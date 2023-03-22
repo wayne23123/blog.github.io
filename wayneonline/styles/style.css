@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.redtext {
+  color: red;
+}
+
+#bluetext {
+  color: blue;
+}
+
+.fontLarge {
+  font-size: 2rem;
+}
+
+.active {
+  color: rgb(42, 160, 105);
+  background-color: black;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+header {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+header a {
+  font-size: 1.75rem;
+  color: black;
+}
+header a:hover {
+  color: rgb(42, 160, 105);
+}
+
+nav {
+  background-color: #3b383c;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  padding: 1rem 0.75rem;
+  color: white;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+nav ul li a:hover {
+  color: rgb(54, 212, 138);
+  background-color: #535353;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+body main section.name {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+body main section.name div.namecard {
+  margin-top: 10vh;
+  height: 37vh;
+  padding: 15px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 435px;
+  box-shadow: 10px 5px 5px black;
+}
+body main section.name div.namecard div.cardup {
+  display: flex;
+  justify-content: space-between;
+}
+body main section.resume {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
+body main section.resume section.table {
+  flex: 5 1 500px;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-top: 1px solid black;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: #eee;
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.picture {
+  display: flex;
+  flex: 1 1 500px;
+  margin-left: 50px;
+}
+
+footer {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
